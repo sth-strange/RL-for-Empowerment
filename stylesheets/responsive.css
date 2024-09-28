@@ -1,0 +1,143 @@
+@media only screen and (min-width: 320px) and (max-width: 744px) {
+  .container {
+      max-width: 87.5%;
+    }
+    .mobile_heading {
+        display: block;
+        font-family: 'PT Sans Caption';
+        font-size: 40px;
+        margin: 0px auto;
+        max-width: 100%;
+        position: relative;
+        color: #3C3C3C;
+        margin-top: 80px;
+    }
+    .flex {
+      display: block;
+    }
+    .heading {
+        display: none;
+    }
+    .text_size {
+      width: 100%;
+    }
+    .distance {
+      margin-left: 0px;
+    }
+    .gif1 {
+      display: none;
+    }
+    .mobile_gif1 {
+      display: block;
+    }
+    .button {
+      width: 100%;
+      height: 60px;
+      margin-top: 30px;
+    }
+    .button_distance {
+      margin-left: 0px;
+    }
+}
+@media only screen and (min-width: 744px) and (max-width: 834px) {
+  .container {
+      max-width: 88.17%;
+    }
+    .mobile_heading {
+        display: block;
+        font-family: 'PT Sans Caption';
+        font-size: 40px;
+        margin: 0px auto;
+        max-width: 100%;
+        position: relative;
+        font-family: 'PT Sans Caption';
+        color: #3C3C3C;
+        margin-top: 80px;
+    }
+    .heading {
+        display: none;
+    }
+
+    .gif1 {
+      margin-top: 30px;
+      width: 242px;
+      height: 248px;
+    }
+}
+@media only screen and (min-width: 834px) and (max-width: 1024px) {
+  .container {
+      max-width: 86.91%;
+    }
+    .mobile_heading {
+        display: block;
+        font-family: 'PT Sans Caption';
+        font-size: 50px;
+        margin: 0px auto;
+        max-width: 100%;
+        position: relative;
+        font-family: 'PT Sans Caption';
+        font-size: 50px;
+        color: #3C3C3C;
+        margin-top: 80px;
+    }
+    .heading {
+        display: none;
+    }
+    .short_text {
+      width: 92.39%;
+    }
+    .gif1 {
+      margin-top: 15px;
+      width: 242px;
+      height: 248px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+      max-width: 86.91%;
+    }
+    .mobile_heading {
+        display: block;
+        font-family: 'PT Sans Caption';
+        font-size: 50px;
+        margin: 0px auto;
+        max-width: 100%;
+        position: relative;
+        font-family: 'PT Sans Caption';
+        font-size: 50px;
+        color: #3C3C3C;
+        margin-top: 80px;
+    }
+    .heading {
+        display: none;
+    }
+    .short_text {
+      width: 92.39%;
+    }
+    .gif1 {
+      margin-top: 15px;
+      width: 325px;
+      height: 332px;
+    }
+    .button_distance {
+      margin-left: 15px;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+  .container {
+      max-width: 86.25%;
+    }
+}
+@media all and (min-width: 1440px) and (max-width: 1680px) {
+  .container {
+      max-width: 87.78%;
+    }
+}
+@media all and (min-width: 1680px) and (max-width: 1840px) {
+  container {
+      max-width: 78.36%;
+    }
+}
+@media only screen  and (min-width: 1840px) {
+
+}

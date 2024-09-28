@@ -1,0 +1,168 @@
+@font-face {
+ font-family: 'PT Sans Caption';
+ src: url("../fonts/PTSansCaption.woff") format('woff');
+}
+body, html {
+margin: 0;
+padding: 0;
+}
+
+.container {
+max-width: 87.78%;
+margin: 0 auto;
+}
+.cover {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Позволяет избежать перерастяжения */
+  object-fit: cover;
+  /* background: url('images/cover.png');
+  background-repeat: no-repeat; */
+  /* background: red; */
+  left: 0px;
+  margin-top: 0px;
+}
+.heading {
+  position: relative;
+  font-family: 'PT Sans Caption';
+  font-size: 50px;
+  color: #535353;
+  margin-top: 100px;
+  justify-content:flex-start;
+  line-height: 50px;
+}
+.subtitle {
+  position: relative;
+  font-family: 'PT Sans Caption';
+  font-size: 32px;
+  color: #535353;
+  /* padding-left: 6.11%; */
+  margin-top: 94px;
+}
+.text {
+  position: relative;
+  font-family: 'PT Sans Caption';
+  font-size: 20px;
+  color: #535353;
+  /* padding-left: 6.11%; */
+  margin-top: 30px;
+  line-height: 25px;
+}
+.paragraph {
+  margin-top: 20px;
+}
+.button {
+  position: relative;
+  width: 156px;
+  height: 46px;
+  display: flex;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.button_distance {
+  margin-left: 30px;
+}
+.button_text {
+  position: relative;
+  font-family: 'PT Sans Caption';
+  font-size: 20px;
+  color: #535353;
+}
+.non_active {
+  background-color: #D1D1D1;
+  border: 0px solid;
+
+}
+.non_active_text {
+  color: #6C6C6C;
+}
+.gif1 {
+  position: relative;
+  width: 372px;
+  height: 380px;
+  margin-top: 50px;
+}
+.mobile_gif1 {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: none;
+}
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+}
+.short_text {
+  /* width: 700px; */
+}
+.long_text {
+  width: 100%;
+
+}
+.distance {
+  margin-left: 7.64%;
+}
+.text_size {
+  width: 61.91%
+}
+.mobile_heading {
+  display: none;
+  position: relative;
+  font-family: 'PT Sans Caption';
+  font-size: 50px;
+  color: #535353;
+  margin-top: 100px;
+}
+.active_button:hover {
+  background-color: #97E6DF;
+  border: 1px solid #97E6DF;
+
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1000;
+}
+.short_container {
+  max-width: 77%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.authors {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+.grey_text {
+  color: #D9D9D9;
+}
+.custom_link {
+    color: #005422;
+    text-decoration: underline;
+}
+
+.custom-link:hover {
+  color: #023617;
+}
+.dotted {
+  margin-top: 20px;
+  border-top: 2px dotted #000;
+}
+.end {
+  height: 40px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery-3.5.1.js" charset="utf-8"></script>
+    <script src="javascripts/script.js" charset="utf-8"></script>
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+    <div class="cover">
+      <img src="images/cover.png" alt="cover image" class="cover">
+    </div>
+    <div class="container">
+      <div class="mobile_heading">Extracting Reward Functions from Diffusion Models</div>
+      <div class="flex">
+        <div class="text_size">
+          <div class="heading">Extracting Reward Functions from Diffusion Models</div>
+          <div class="text short_text">How can we transform the intuitive notion of altruism into a formal framework for designing reinforcement learning (RL) agents? The immediate challenge is defining a reward function that promotes altruistic behavior.</div>
+          <div class="text short_text paragraph">At the core, however, lies a deeper question: Can this formalized version of altruism serve as a reliable proxy? How far can this idea be pushed? We want to explore where it works, where it breaks down, and in which contexts altruistic proxy can or cannot be trusted to produce aligned behavior.</div>
+          <div class="mobile_gif1">
+            <img src="images/gif1.png" alt="gif1 image" class="mobile_gif1">
+          </div>
+          <div class="flex">
+            <div class="button active_button">
+              <div class="button_text">Slides</div>
+            </div>
+            <div class="button button_distance non_active">
+              <div class="button_text non_active_text">Paper</div>
+            </div>
+            <div class="button button_distance non_active">
+              <div class="button_text non_active_text">Code</div>
+            </div>
+          </div>
+        </div>
+        <div class="distance">
+          <div class="gif1">
+            <img src="images/gif1.png" alt="gif1 image" class="gif1">
+          </div>
+        </div>
+      </div>
+      <div class="subtitle">Abstract</div>
+      <div class="text long_text">Our work builds on the Empowerment concept from X and Y, later refined by Z with the introduction of the Choice metric. These approaches are grounded in the notion that, rather than achieving specific goals on our behalf, helpful AI should maximize our capacity to pursue a wide range of possibilities. The Choice metric reduces the need for an altruistic agent to possess perfect knowledge of its environment. It does this by defining the agent’s reward in terms of the number of possible states that its actions open up for the user.</div>
+      <div class="text long_text paragraph">We are continuing this line of research, focusing on computation of the reward for opportunity maximizing agents. Specifically, we train so-called support agents using data from earlier steps of both support and target agent in the same episode. For example, if our planning horizon spans 10 steps, we defer calculating the reward for the first step until step 11, when we update the support agent's policy using snapshots of its and target agent's moves.</div>
+      <div class="text long_text paragraph">In exploring different approaches to formalizing altruism, we believe it is crucial to recognize that even on a conceptual level altruism is not an end goal. It is a proxy. And like any proxy, it is vulnerable to Goodhart's law. The critical question driving our research is: How reliable is this proxy? What are the predictable failure modes we can replicate even with toy examples? As these are conceptual questions, we limit our investigation to a two-dimensional, discrete environment to facilitate clearer analysis of the underlying concepts.</div>
+  <div class="subtitle">Work stages:</div>
+  <div class="text long_text">1. Formalization of the concept:
+Creating yet another way to write a reward function that can be used to train RL agents inclined toward altruistic behavior, matching human expectations of altruism.</div>
+  <div class="text long_text paragraph">2. Performance Evaluation:
+Comparing the performance of altruistic agents with prior work to confirm that our approach performs on par with existing methods.</div>
+  <div class="text long_text paragraph">3. Failure Mode Analysis:
+Investigating the failure mode we’ve identified as the "trade-off scenario," where altruistic behavior conflicts with the objectives of the patron agent.</div>
+<div class="dotted"></div>
+  <div class="text long_text paragraph">4. Open Framework (coming soon):
+Developing an open framework that allows others to test their own hypotheses within this setup.</div>
+  <div class="short_container">
+    <div class="authors">
+      <img src="images/authors.png" alt="authors image" class="authors">
+    </div>
+  </div>
+  <div class="text long_text">Join the project!</div>
+  <div class="text long_text paragraph">Originally, this project began as part of our final project in courses
+    <a href="https://aisafetyfundamentals.com" class="custom_link">BlueDot Impact's AI Safety Fundamentals</a>
+    and
+    <a href="https://www.aisafetybook.com/virtual-course" class="custom_link">AI Safety, Ethics and Society Course by Center for AI Safety</a>, but it has since evolved beyond those timelines and the capacity of our small team. We believe that exploring altruism as a metric for useful agents requires much more conceptual work than four people can accomplish in a lifetime.</div>
+  <div class="text long_text paragraph">That’s why we’ve opened this project to the community. If you have ideas, feedback, or would like to stay updated on our progress, please reach out or subscribe for updates.</div>
+    </div>
+    <div class="end"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Находим все неактивные кнопки
+        const inactiveButtons = document.querySelectorAll('.button.non_active');
+
+        // Создаем элемент для всплывающего сообщения
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        tooltip.textContent = 'coming soon';
+        document.body.appendChild(tooltip);
+
+        // Скрываем всплывающий элемент по умолчанию
+        tooltip.style.position = 'absolute';
+        tooltip.style.display = 'none';
+        tooltip.style.padding = '5px 10px';
+        tooltip.style.backgroundColor = '#D9D9D9';
+        tooltip.style.color = 'black';
+        tooltip.style.borderRadius = '5px';
+        tooltip.style.fontSize = '12px';
+        tooltip.style.zIndex = '1000';
+
+        // Добавляем обработчики событий для каждой неактивной кнопки
+        inactiveButtons.forEach(button => {
+            button.addEventListener('mouseenter', function (event) {
+                // Определяем положение кнопки
+                const rect = button.getBoundingClientRect();
+
+                // Устанавливаем положение всплывающего элемента
+                tooltip.style.left = `${rect.right + window.pageXOffset - 30}px`; // Смещаем влево на 10px
+                tooltip.style.top = `${rect.top + window.pageYOffset - tooltip.offsetHeight - 30}px`; // Смещаем вверх на высоту pop-up и немного
+
+                // Показываем всплывающий элемент
+                tooltip.style.display = 'block';
+            });
+
+            button.addEventListener('mouseleave', function () {
+                // Скрываем всплывающее сообщение при выходе курсора
+                tooltip.style.display = 'none';
+            });
+        });
+    });
+    </script>
+  </body>
+</html>

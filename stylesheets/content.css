@@ -15,11 +15,8 @@ margin: 0 auto;
   position: relative;
   width: 100%;
   height: auto;
-  max-height: 100%; /* Позволяет избежать перерастяжения */
+  max-height: 100%;
   object-fit: cover;
-  /* background: url('images/cover.png');
-  background-repeat: no-repeat; */
-  /* background: red; */
   left: 0px;
   margin-top: 0px;
 }
@@ -37,7 +34,6 @@ margin: 0 auto;
   font-family: 'PT Sans Caption';
   font-size: 32px;
   color: #535353;
-  /* padding-left: 6.11%; */
   margin-top: 94px;
 }
 .text {
@@ -45,7 +41,6 @@ margin: 0 auto;
   font-family: 'PT Sans Caption';
   font-size: 20px;
   color: #535353;
-  /* padding-left: 6.11%; */
   margin-top: 30px;
   line-height: 25px;
 }
@@ -100,9 +95,6 @@ margin: 0 auto;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0px;
-}
-.short_text {
-  /* width: 700px; */
 }
 .long_text {
   width: 100%;

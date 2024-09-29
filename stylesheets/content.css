@@ -61,7 +61,7 @@ margin: 0 auto;
   line-height: 25px;
 }
 .paragraph {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .button {
   position: relative;
@@ -191,6 +191,8 @@ margin: 0 auto;
 }
 .mobile_sign {
   display: none;
+  margin-top: 10px;
+  
 }
 .short_text {
   width: 50%;

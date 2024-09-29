@@ -24,9 +24,16 @@ document.addEventListener('DOMContentLoaded', function () {
             // Определяем положение кнопки
             const rect = button.getBoundingClientRect();
 
-            // Устанавливаем положение всплывающего элемента
-            tooltip.style.left = `${rect.right + window.pageXOffset - 30}px`; // Смещаем влево на 10px
-            tooltip.style.top = `${rect.top + window.pageYOffset - tooltip.offsetHeight - 30}px`; // Смещаем вверх на высоту pop-up и немного
+            // Проверяем ширину экрана
+            if (window.innerWidth <= 768) {
+                // Позиционирование для мобильных устройств
+                tooltip.style.left = `${rect.left + window.pageXOffset}px`; // Сместим относительно начала кнопки
+                tooltip.style.top = `${rect.bottom + window.pageYOffset + 10}px`; // Сместим под кнопку
+            } else {
+                // Позиционирование для десктопных устройств
+                tooltip.style.left = `${rect.right + window.pageXOffset - 30}px`; // Смещаем влево на 10px
+                tooltip.style.top = `${rect.top + window.pageYOffset - tooltip.offsetHeight - 30}px`; // Смещаем вверх на высоту pop-up и немного
+            }
 
             // Показываем всплывающий элемент
             tooltip.style.display = 'block';

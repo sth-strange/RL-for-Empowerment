@@ -187,7 +187,10 @@ margin: 0 auto;
 }
 .sign {
   margin-top: 10px;
-  font-size: 18px;
+  /* font-size: 18px; */
+}
+.mobile_sign {
+  display: none;
 }
 .short_text {
   width: 50%;

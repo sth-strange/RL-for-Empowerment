@@ -52,6 +52,12 @@
     .subtitle {
       font-size: 20px;
     }
+    .mobile_authors {
+      display: block;
+    }
+    .short_container {
+      display: none;
+    }
 }
 @media only screen and (min-width: 744px) and (max-width: 834px) {
   .container {
@@ -100,7 +106,12 @@
     .subtitle {
       font-size: 26px;
     }
-
+    .mobile_authors {
+      display: block;
+    }
+    .short_container {
+      display: none;
+    }
 }
 @media only screen and (min-width: 834px) and (max-width: 1024px) {
   .container {
@@ -152,6 +163,13 @@
     .first_button {
       margin-top: 20px;
     }
+    .mobile_authors {
+      display: block;
+    }
+    .short_container {
+      display: none;
+    }
+
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .container {

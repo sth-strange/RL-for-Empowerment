@@ -157,3 +157,10 @@ margin: 0 auto;
 .end {
   height: 40px;
 }
+.mobile_authors {
+  display: none;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+}

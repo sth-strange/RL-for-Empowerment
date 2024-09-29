@@ -3,15 +3,7 @@
       max-width: 87.5%;
     }
     .mobile_heading {
-        display: block;
-        font-family: 'PT Sans Caption';
-        font-size: 40px;
-        margin: 0px auto;
-        max-width: 100%;
-        position: relative;
-        color: #3C3C3C;
-        font-size: 24px;
-        margin-top: 30px;
+
     }
     .text {
       margin-top: 20px;
@@ -22,7 +14,8 @@
       display: block;
     }
     .heading {
-        display: none;
+      font-size: 24px;
+      margin-top: 30px;
     }
     .text_size {
       width: 100%;
@@ -69,18 +62,10 @@
   .container {
       max-width: 88.17%;
     }
-    .mobile_heading {
-        display: block;
-        font-family: 'PT Sans Caption';
-        margin: 0px auto;
-        max-width: 100%;
-        position: relative;
-        color: #3C3C3C;
-        margin-top: 40px;
-        font-size: 40px;
-    }
+
     .heading {
-        display: none;
+      margin-top: 40px;
+      font-size: 40px;
     }
     .video {
       display: none;
@@ -94,9 +79,6 @@
     }
     .text_size {
       width: 100%;
-    }
-    .button_flex {
-      display: flex;
     }
     .button_text {
       font-size: 16px;
@@ -116,6 +98,23 @@
     .short_container {
       display: none;
     }
+
+    .button_flex {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+    }
+    .button_distance {
+      margin-left: 0px;
+    }
+    .button {
+      flex: 1;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+      min-width: 0;
+    }
 }
 @media only screen and (min-width: 834px) and (max-width: 1024px) {
   .container {
@@ -125,19 +124,14 @@
       width: 50%;
     }
     .mobile_heading {
-        display: block;
-        font-family: 'PT Sans Caption';
-        font-size: 50px;
-        margin: 0px auto;
-        max-width: 100%;
-        position: relative;
-        font-family: 'PT Sans Caption';
-        font-size: 50px;
-        color: #3C3C3C;
-        margin-top: 80px;
+
     }
     .heading {
-        display: none;
+      font-size: 50px;
+      position: relative;
+      font-size: 50px;
+      color: #3C3C3C;
+      margin-top: 80px;
     }
     .short_text {
       width: 92.39%;
@@ -165,7 +159,7 @@
       /* margin: 0 auto; */
     }
     .first_button {
-      margin-top: 20px;
+      /* margin-top: 20px; */
     }
     .mobile_authors {
       display: block;
@@ -179,26 +173,17 @@
   .container {
       max-width: 86.91%;
     }
-    .mobile_heading {
-        display: block;
-        font-family: 'PT Sans Caption';
-        font-size: 50px;
-        margin: 0px auto;
-        max-width: 100%;
-        position: relative;
-        font-family: 'PT Sans Caption';
-        font-size: 50px;
-        color: #3C3C3C;
-        margin-top: 80px;
-    }
+
     .heading {
-        display: none;
+      font-size: 50px;
+      color: #3C3C3C;
+      margin-top: 80px;
     }
     .short_text {
       width: 92.39%;
     }
     .video {
-      margin-top: 30px;
+      /* margin-top: 30px; */
       /* width: 80%; */
       /* height: 332px; */
     }
@@ -211,17 +196,21 @@
   .container {
       max-width: 86.25%;
     }
+
 }
 @media all and (min-width: 1440px) and (max-width: 1680px) {
   .container {
       max-width: 87.78%;
     }
+    .text_size {
+    width: 2000px;
+  }
 }
-@media all and (min-width: 1680px) and (max-width: 1840px) {
+@media only screen  and (min-width: 1680px) {
   container {
       max-width: 78.36%;
     }
-}
-@media only screen  and (min-width: 1840px) {
-
+    .button {
+      margin-top: 100px;
+    }
 }

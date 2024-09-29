@@ -53,9 +53,6 @@
     .short_container {
       display: none;
     }
-    .first_button {
-      margin-top: 20px;
-    }
     .end {
       height: 20px;
     }
@@ -73,6 +70,13 @@
     }
     .grey_text {
       margin-top: 0px;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+    .non_active {
+      margin-top: 10px;
     }
 }
 @media only screen and (min-width: 744px) and (max-width: 834px) {

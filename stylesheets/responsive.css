@@ -11,10 +11,10 @@
         position: relative;
         color: #3C3C3C;
         font-size: 24px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .text {
-      margin-top: 15px;
+      margin-top: 20px;
     }
     .flex {
       display: block;
@@ -69,13 +69,12 @@
     .mobile_heading {
         display: block;
         font-family: 'PT Sans Caption';
-        font-size: 40px;
         margin: 0px auto;
         max-width: 100%;
         position: relative;
-        font-family: 'PT Sans Caption';
         color: #3C3C3C;
-        margin-top: 80px;
+        margin-top: 40px;
+        font-size: 40px;
     }
     .heading {
         display: none;
@@ -102,12 +101,11 @@
     .text {
       font-size: 16px;
       line-height: 20px;
-    }
-    .heading {
-      font-size: 40px;
+      margin-top: 15px;
     }
     .subtitle {
       font-size: 26px;
+      margin-top: 40px
     }
     .mobile_authors {
       display: block;

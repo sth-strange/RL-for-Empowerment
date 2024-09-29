@@ -32,11 +32,12 @@
     }
     .button {
       width: 100%;
-      height: 60px;
-      margin-top: 30px;
+      height: 40px;
+      /* margin-top: 30px; */
     }
     .button_distance {
       margin-left: 0px;
+      margin-top: 15px;
     }
 }
 @media only screen and (min-width: 744px) and (max-width: 834px) {
@@ -73,6 +74,7 @@
     .button_flex {
       display: flex;
     }
+
 }
 @media only screen and (min-width: 834px) and (max-width: 1024px) {
   .container {

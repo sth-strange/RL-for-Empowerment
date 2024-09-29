@@ -113,19 +113,20 @@
     .button_flex {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      gap: 20px;
       width: 100%;
     }
     .button_distance {
       margin-left: 0px;
     }
-    .button {
+    .width_button {
       flex: 1;
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 0;
       min-width: 0;
     }
+
     .sign {
       display: none;
     }
@@ -173,10 +174,19 @@
     }
     .button_flex {
       display: flex;
-      /* margin: 0 auto; */
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
     }
-    .first_button {
-      /* margin-top: 20px; */
+    .button_distance {
+      margin-left: 0px;
+    }
+    .width_button {
+      flex: 1;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+      min-width: 0;
     }
     .mobile_authors {
       display: block;

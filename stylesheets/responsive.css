@@ -24,10 +24,10 @@
     .distance {
       margin-left: 0px;
     }
-    .gif1 {
+    .video {
       display: none;
     }
-    .mobile_gif1 {
+    .mobile_video {
       display: block;
     }
     .button {
@@ -57,16 +57,29 @@
     .heading {
         display: none;
     }
-
-    .gif1 {
-      margin-top: 30px;
-      width: 242px;
-      height: 248px;
+    .video {
+      display: none;
+    }
+    .mobile_video {
+      display: block;
+      max-width: 100%;
+    }
+    .flex {
+      display: block;
+    }
+    .text_size {
+      width: 100%;
+    }
+    .button_flex {
+      display: flex;
     }
 }
 @media only screen and (min-width: 834px) and (max-width: 1024px) {
   .container {
       max-width: 86.91%;
+    }
+    .text_size {
+      width: 50%;
     }
     .mobile_heading {
         display: block;
@@ -86,10 +99,27 @@
     .short_text {
       width: 92.39%;
     }
-    .gif1 {
-      margin-top: 15px;
-      width: 242px;
-      height: 248px;
+    .video {
+      margin-top: 30px;
+      /* width: 242px;
+      height: 248px; */
+    }
+    .video {
+      display: none;
+    }
+    .mobile_video {
+      display: block;
+      max-width: 100%;
+    }
+    .flex {
+      display: block;
+    }
+    .text_size {
+      width: 100%;
+    }
+    .button_flex {
+      display: flex;
+      /* margin: 0 auto; */
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -114,10 +144,10 @@
     .short_text {
       width: 92.39%;
     }
-    .gif1 {
-      margin-top: 15px;
-      width: 325px;
-      height: 332px;
+    .video {
+      margin-top: 30px;
+      /* width: 80%; */
+      /* height: 332px; */
     }
     .button_distance {
       margin-left: 15px;

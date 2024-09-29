@@ -97,6 +97,7 @@ margin: 0 auto;
   height: auto;
   margin-top: 100px;
   object-fit: cover;
+  display: block;
 }
 .mobile_video {
   position: relative;

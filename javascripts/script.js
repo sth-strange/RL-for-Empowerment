@@ -45,36 +45,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('subscribe-form');
-
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const email = document.getElementById('email').value;
-
-      fetch('https://sweet-pond-ab19.six-of-proxies.workers.dev', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ email })
-      })
-      .then(response => response.json())
-      .then(data => {
-          if (data.success) {
-              document.getElementById('subscribe-message').textContent = 'Success!';
-          } else {
-              document.getElementById('subscribe-message').textContent = 'Error. Try again.';
-          }
-      })
-      .catch(error => {
-          document.getElementById('subscribe-message').textContent = 'Error. Try again.';
-      });
-    });
-  } else {
-    console.error('Форма с ID "subscribe-form" не найдена');
-  }
-});

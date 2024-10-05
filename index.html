@@ -85,9 +85,15 @@
     <div class="text long_text paragraph">We’re excited to&nbsp;announce that we’ll soon be opening this project to&nbsp;the&nbsp;community! If you have ideas or&nbsp;feedback, or&nbsp;if you’d like to&nbsp;stay updated on&nbsp;our&nbsp;progress, please reach out or&nbsp;subscribe for&nbsp;updates.</div>
     <div class="text long_text paragraph">Сlick the "Subscribe" button to receive notifications whenever we make changes, add new features, or release updates. Stay tuned to be among the first to know about our advancements!</div>
     <div class="text long_text paragraph">Contacts: six.of.proxies@gmail.com</div>
-    <div class="button button_distance non_active width_button watch_button">
-      <div class="button_text non_active_text">Watch</div>
-    </div>
+    <form id="subscribe-form">
+      <div class="flex button_flex">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required class="input_mail">
+        <div class="button_distance"></div>
+        <button type="submit" class="button subscribe_button watch_button">
+          <div class="button_text">Subscribe</div>
+        </button>
+      </div>
+    </form>
   <div class="short_container">
     <div class="authors">
       <img src="images/authors.png" alt="authors image" class="authors">

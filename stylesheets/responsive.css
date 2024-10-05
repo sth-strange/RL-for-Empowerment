@@ -155,6 +155,10 @@
     .grey_text {
       margin-top: 0px;
     }
+  
+    .input_mail {
+      width: 100%;
+    }
 }
 @media only screen and (min-width: 834px) and (max-width: 1024px) {
   .container {
@@ -277,7 +281,10 @@
     .button {
       margin-top: 100px;
     }
-    .watch_button {
-      margin-top: 30px;
+    .subscribe_button {
+      margin-top: 0px;
+    }
+    .button_flex {
+      display: flex;
     }
 }

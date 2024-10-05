@@ -52,7 +52,7 @@ document.getElementById('subscribe-form').addEventListener('submit', function (e
     const email = document.getElementById('email').value;
 
     // Отправляем email на ваш Cloudflare Worker
-    fetch('https:///sweet-pond-ab19.six-of-proxies.workers.dev', {
+    fetch('https://sweet-pond-ab19.six-of-proxies.workers.dev', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
